@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>文章</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style type="text/css">
+  	.article-title{
+  		font-weight:bold;
+  		display:inline-block;
+  		margin-left:20px;
+  		width: 65%;
+  	}
+  	.article-user-img{
+  		float:right;
+  		width: 30%
+  	}
+  	.msg-username{
+  		width:150px;
+		display:inline-block;
+		overflow:hidden;
+		float:left;
+		line-height: 30px;
+		clear:left;
+  	}
+  	.msg-content{
+  		float:left;
+  		line-height: 30px;
+  	}
+  	.msg-div{
+  		padding: 10px 30px;
+  		margin-bottom:20px;
+  		vertical-align:middel;
+  		height: 60px;
+  	}
+
+  </style>
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini skin-blue-light fixed">
+<div class="wrapper">
+
+  <!-- 引入header/sidebar中的內容 -->
+  <div class="headerpage"></div>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- 暫省略
+    <section class="content-header">
+      <h1>
+        Page Header
+        <small>Optional description</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+     -->
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+	<h1 align="center">遊戲攻略區</h1>
+	<div class="row">
+		<div class="auto-center">
+			
+			<div class="box box-primary">
+            <!-- /.box-header -->
+            <div class="box-body no-padding with-border" id="article-box">
+              <div class="mailbox-read-info box-comments">
+                <h4 class="article-title">宗師大師局，T2角晉升變T0角，三王功速流，猜塔速度快到不能再快了，AD角全部康特！</h4>
+                <h4 class="article-user-img" style="display: inline-block;width: 150px">
+                	<img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg">
+                    <span class="username" style="line-height: 30px">江林公子</span>
+                </h4>
+              </div>
+              <!-- /.mailbox-controls -->
+              <div class="mailbox-read-message" style="margin:0 20px">
+                <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+				<span class="text-muted pull-right">文章創建時間： 8:03 PM Today</span><br>
+				<span class="text-muted pull-right">上次修改時間： 8:03 PM Today</span><br>
+				<span class="pull-right text-muted press-likes">127 likes</span><br>
+              </div>
+              <!-- /.mailbox-read-message -->
+            </div>
+            
+            <!-- /.box-button -->
+            <div class="box-footer">
+              <button id="article-likes" style="width: 50%" type="button" class="btn btn-default pull-left press-likes"><i class="fa fa-thumbs-o-up"></i> 讚</button>
+              <button id="article-collection" style="width: 50%" type="button" class="btn btn-default pull-right press-collection"><i class="fa fa-bookmark-o"></i> 收藏</button>
+              <button id="article-change" style="width: 50%" type="button" class="btn btn-default pull-left owner-only"><i class="fa fa-pencil"></i> 編輯</button>
+              <button id="article-remove" style="width: 50%" type="button" class="btn btn-default pull-right owner-only"><i class="fa fa-trash-o"></i> 刪除</button>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+				<div class="box-footer box-comments" id="article-message">
+	              <div class="box-comment">
+	                <!-- User image -->
+	                <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+	
+	                <div class="comment-text">
+	                      <span class="username">
+	                        報告班長
+	                        <span class="text-muted pull-right">8:03 PM Today</span>
+	                      </span><!-- /.username -->
+	                  感謝分享
+	                </div>
+	                <!-- /.comment-text -->
+	              </div>
+	              <!-- /.box-comment -->
+	            </div>
+	            <div class="box-footer">
+	            	<form id="form-message" action="#" method="post">
+		                <img class="img-responsive img-circle img-sm login-user" src="../upload/visitor.png" alt="Alt Text">
+		                <!-- .img-push is used to add margin to elements next to floating images -->
+		                <div class="img-push">
+		                  <input type="text" class="form-control" id="message-content" name="messageContent" placeholder="Press enter to post comment">
+		                </div>
+	            	</form>
+	            </div>
+            </div>
+          </div>
+		</div>
+	</div>
+	
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <div class="footerpage"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- getUrlParam -->
+<script src="../addJS/jquery-getUrlParam.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- 引入html -->
+<script type="text/javascript">
+    $(".headerpage").load("header.html");
+    $(".footerpage").load("footer.html");
+    
+    var articleId = $.getUrlParam("article_id")
+    
+    $(document).ready(function(){
+    	
+    	showArticle();
+    	
+    	showIsLikes();
+    	
+    	showIsCollection();
+    	
+    	showMessage();
+    	
+    	$("#article-likes").click(function(){
+    		$.ajax({
+    			"url":"/forum/articles/"+articleId+"/change_likes",
+    			"dataType":"json",
+    			"success":function(json){
+    				if(json.state==2000){
+    					showArticle();
+    					showIsLikes();
+    				}
+    			},
+    			"error":function(){
+    				alert("請先登入！");
+   		  	        location.href="login.html";
+    			}
+    		})
+    	})
+    	
+    	$("#article-collection").click(function(){
+    		$.ajax({
+    			"url":"/forum/collections/"+articleId+"/add_collection",
+    			"dataType":"json",
+    			"success":function(json){
+    				if(json.state==2000){
+    					showIsCollection();
+    				}
+    			},
+    			"error":function(){
+    				alert("請先登入！");
+   		  	        location.href="login.html";
+    			}
+    		})
+    	})
+    	
+    	$("#article-change").click(function(){
+    		location.href="editArticle.html?article_id="+articleId
+    	})
+    	
+    	$("#article-remove").click(function(){
+    		if(confirm("確定要刪除該文章嗎？")){
+	    		$.ajax({
+	    			"url":"/forum/articles/"+articleId+"/remove_article",
+	    			"dataType":"json",
+	    			"success":function(json){
+	    				if(json.state==2000){
+	    					alert("刪除成功");
+	    					location.href="articles.html";
+	    				}else{
+	    					alert(json.message);
+	    				}
+	    			},
+	    			"error":function(){
+	    				alert("登入超時！請重新登入！");
+	   		  	        location.href="login.html";
+	    			}
+	    		})
+    		}
+    	})
+    	
+    	//留言按鍵點擊事件
+    	$("#message-content").keydown(function(e){
+    		if(e.keyCode==13){
+    		e.preventDefault();
+    			console.log($("#form-message").serialize());
+	    		if(confirm("確定要留言嗎？")){
+		    		$.ajax({
+		    			"url":"/messages/"+articleId+"/message",
+		    			"data":$("#form-message").serialize(),
+		    			"type":"post",
+		    			"dataType":"json",
+		    			"success":function(json){
+		    				if(json.state==2000){
+		    					alert("留言成功");
+		    					location.reload();
+		    				}
+		    			},
+		    			"error":function(){
+		    				alert("請先登入！");
+		   		  	        location.href="login.html";
+		    			}
+		    		})
+	    		}
+    		}
+    	})
+    	
+    })
+    
+    function showArticle(){
+    	$.ajax({
+    		"url":"/forum/articles/"+articleId,
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			
+    			var article = json.data;
+    			
+    			if(json.state==2000){
+    				$("#article-box").empty();
+    				
+    				var html = '<div class="mailbox-read-info box-comments">'+
+				               '<h4 class="article-title">#{title}</h4>'+
+				               '<h4 class="article-user-img">'+
+				               '<img class="img-circle img-sm" src="#{avatar}">'+
+				               '<span class="username" style="line-height: 30px; margin-left:40px">#{username}</span>'+
+				               '</h4>'+
+				               '</div>'+
+				               '<div class="mailbox-read-message" style="margin:0 20px">'+
+				               '<p>#{content}</p>'+
+				    		   '<span class="text-muted pull-right" style="clear:both">文章創建時間： #{createdTimeStr}</span>'+
+				    		   '<span class="text-muted pull-right" style="clear:both">上次修改時間： #{modifiedTimeStr}</span>'+
+				    		   '<span class="pull-right text-muted" style="clear:both">#{likes} likes</span>'+
+				               '</div>'
+    				
+				    html = html.replace(/#{title}/g,article.title);
+				    html = html.replace(/#{avatar}/g,article.avatar);
+				    html = html.replace(/#{username}/g,article.username);
+				    html = html.replace(/#{content}/g,article.content);
+				    html = html.replace(/#{createdTimeStr}/g,article.createdTimeStr);
+				    html = html.replace(/#{modifiedTimeStr}/g,article.modifiedTimeStr);
+				    html = html.replace(/#{likes}/g,article.likes);    
+				               
+				    $("#article-box").append(html);
+				    
+				    $("head title").text(article.title);
+				    
+				    if(article.isOwner==0){
+				    	$(".owner-only").hide();
+				    }
+				    
+    			}
+    		}
+    	})
+    }
+    
+    function showIsLikes(){
+    	$.ajax({
+    		"url":"/forum/likes/"+articleId+"/get_islikes",
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			if(json.state==2000){
+    				if(json.data){
+    					$(".press-likes").css("color","blue");
+    				}else{
+    					$(".press-likes").css("color","black");
+    				}
+    			}
+    		}
+    	})
+    }
+    
+    function showIsCollection(){
+    	$.ajax({
+    		"url":"/forum/collections/"+articleId+"/get_isCollection",
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			if(json.state==2000){
+    				if(json.data){
+    					$(".press-collection").css("color","blue");
+    				}else{
+    					$(".press-collection").css("color","black");
+    				}
+    			}
+    		}
+    	})
+    }
+    
+    function showMessage(){
+    	$.ajax({
+    		"url":"/forum/messages/"+articleId+"/",
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			if(json.state==2000){
+					var message = json.data;    				
+    				$("#article-message").empty();
+    				
+    				for (var i = 0; i < message.length; i++) {
+
+    					var remove = message[i].isOwner == 1 ? "display:block":"display:none";
+    					
+						var html = 	'<div class="box-comment">'+
+					                '<img class="img-circle img-sm" src="#{avatar}" alt="User Image">'+
+		            			    '<div class="comment-text">'+
+		                  		    '<span class="username">#{username}'+
+			                       	'<span class="text-muted pull-right">#{createdTimeStr}</span>'+
+			                       	'<a onclick="removeMessage(#{messageId})" style="clear:right;'+remove+'" class="text-muted pull-right"><i class="fa fa-remove"></i></a>'+
+		                      		'</span>#{messageContent}</div></div>';
+		               
+					   html = html.replace(/#{avatar}/g,message[i].avatar);
+					   html = html.replace(/#{username}/g,message[i].username);
+					   html = html.replace(/#{createdTimeStr}/g,message[i].createdTimeStr);
+					   html = html.replace(/#{messageId}/g,message[i].messageId);
+					   html = html.replace(/#{messageContent}/g,message[i].messageContent);
+    					
+		               $("#article-message").append(html);
+					}
+    				
+    			}
+    		}
+    	})
+    }
+    
+    function removeMessage(messageId){
+    	if(confirm("確定要刪除留言嗎？")){
+			$.ajax({
+				"url":"/forum/messages/"+messageId+"/delete",
+	    		"type":"post",
+	    		"dataType":"json",
+	    		"success":function(json){
+	    			if(json.state==2000){
+	    				alert("刪除成功");
+	    				location.reload();
+	    			}else{
+	    				alert(json.message);
+	    			}
+	    		}
+			})
+    	}
+    }
+    
+</script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>

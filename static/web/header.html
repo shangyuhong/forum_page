@@ -1,0 +1,210 @@
+<head>
+  <meta charset="utf-8">
+<style type="text/css">
+  	.img-username,#table-text td{
+  		vertical-align:middle
+  	}
+  	.auto-center{
+  		width:80%;
+  		margin:auto;
+  	}
+</style>
+</head>
+
+<!-- header -->
+<!-- Main Header -->
+<header class="main-header">
+
+  <!-- Logo -->
+  <a href="index.html" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini"><b>LOL</b></span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg"><b>激鬥峽谷</b>	LOL</span>
+  </a>
+
+  <!-- Header Navbar -->
+  <nav class="navbar navbar-static-top" role="navigation">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <!-- Navbar Right Menu -->
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <!-- User Account Menu -->
+        <li class="dropdown user user-menu">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <!-- The user image in the navbar-->
+            <img src="../dist/img/visitor.png" class="user-image login-user" alt="User Image">
+            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+            <span class="hidden-xs login-username">訪客</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- The user image in the menu -->
+            <li class="user-header">
+              <img src="../dist/img/visitor.png" class="img-circle login-user" alt="User Image">
+
+              <p class="login-username">
+                訪客
+              </p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-4 text-center">
+                  <a href="myArticles.html">我的文章</a>
+                </div>
+                <div class="col-xs-4 text-center pull-right">
+                  <a href="myCollections.html">我的收藏</a>
+                </div>
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-right" id="isVisitor">
+                <a href="login.html" class="btn btn-default btn-flat">登入</a>
+              </div>
+              <div class="pull-right" id="isUser">
+                <input type="button" value="登出" id="sign-out" class="btn btn-default btn-flat">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+        <li>
+          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="../dist/img/visitor.png" class="img-circle login-user" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p class=login-username>訪客</p>
+        <!-- Status -->
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      </div>
+    </div>
+
+    <!-- search form (Optional) -->
+    <form action="#" method="get" class="sidebar-form">
+      <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Search...">
+        <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+            </button>
+          </span>
+      </div>
+    </form>
+    <!-- /.search form -->
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" id="sidebarmenu" data-widget="tree">
+      <li class="header">激鬥峽谷攻略交流區</li>
+      <!-- Optionally, you can add icons to the links -->
+      <li class="treeview">
+        <a href="#"><i class="fa fa-gamepad"></i> <span>遊戲中心</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="allNews.html"><i class="fa  fa-hand-o-right"></i>新聞</a></li>
+          <li><a href="champions.html"><i class="fa  fa-hand-o-right"></i>英雄</a></li>
+          <li><a href="jungle.html"><i class="fa  fa-hand-o-right"></i>野怪</a></li>
+          <li><a href="items.html"><i class="fa  fa-hand-o-right"></i>裝備</a></li>
+        </ul>
+      </li>
+      <li><a href="articles.html"><i class="fa fa-exchange"></i> <span>攻略討論區</span></a></li>
+      <li class="treeview">
+        <a href="#"><i class="fa fa-user"></i> <span>會員專區</span>
+          <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="editUserData.html"><i class="fa  fa-hand-o-right"></i>修改會員資料</a></li>
+          <li><a href="myArticles.html"><i class="fa  fa-hand-o-right"></i>我的文章</a></li>
+          <li><a href="myCollections.html"><i class="fa  fa-hand-o-right"></i>我的收藏</a></li>
+        </ul>
+      </li>
+      <li id="cms-only" style="display:none"><a href="cms.html"><i class="glyphicon glyphicon-wrench"></i> <span>後台管理中心</span></a></li>
+    </ul>
+    <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
+
+<!-- 額外JS -->
+<script src="../addJS/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+
+<!-- tree的初始化 防止頁面重整後無法開啟下拉框 -->
+<script>
+
+	$(document).ready(function(){
+		
+		showUserImgUsername();
+		
+		$("#sign-out").click(function(){
+			$.ajax({
+				"url":"/forum/users/sign_out",
+				"dataType":"json",
+				"success":function(json){
+	    			if(json.state==2000){
+	    				alert("歡迎下次的到來！");
+	    				location.href = "index.html";
+	    			}else{
+	    				alert(json.message);
+	    			}
+	    		},
+	    		"error":function(){
+			  		  alert("登入超時！請重新登入！");
+			  		location.href = "index.html";
+			    }
+			})
+		})
+		
+		$("#sidebarmenu").tree();
+	})
+	
+	function showUserImgUsername(){
+		$.ajax({
+    		"url":"/forum/users/get_info",
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			if(json.state==2000){
+    				$(".login-user").attr("src",json.data.avatar);
+    				$(".login-username").text(json.data.username);
+    				
+    				$("#isVisitor").hide();
+    				
+    				if(json.data.isAdmin==1){
+    					$("#cms-only").css("display","block");
+    				}
+    				
+    			}else{
+    				alert(json.message);
+    			}
+    		},
+    		error: function(jqXHR,exception){
+    			$("#isUser").hide();
+    		}
+    	});
+	}
+	
+</script>

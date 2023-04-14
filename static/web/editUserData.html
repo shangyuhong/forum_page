@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>編輯個人資料</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini skin-blue-light fixed">
+<div class="wrapper">
+
+  <!-- 引入header/sidebar中的內容 -->
+  <div class="headerpage"></div>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- 暫省略
+    <section class="content-header">
+      <h1>
+        Page Header
+        <small>Optional description</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+     -->
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+	<h1 align="center" style="margin-bottom:40px">編輯個人資料</h1>
+	<div class="auto-center">
+      <!-- Custom Tabs -->
+      <div class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">修改個人資料</a></li>
+          <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">修改密碼</a></li>
+          <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">上傳頭像</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_1">
+         	 	<!-- 修改個人資料欄 -->
+				<form class="form-horizontal" id="form-change-info">
+					<div class="form-group">
+						<label class="col-md-2 control-label">用戶名：</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" value="報告班長" id="inp-username" name="username" readonly="readonly">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">電話號碼：</label>
+						<div class="col-md-8">
+							<input type="text" maxlength="10" class="form-control" id="inp-phone" name="phone" placeholder="请输入電話號碼" value="0927338308">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">電子信箱：</label>
+						<div class="col-md-8">
+							<input type="email" class="form-control" id="inp-email" name="email" placeholder="请输入電子信箱" value="shangyuyu0421@gmail.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">性别：</label>
+						<div class="col-md-8">
+							<label class="radio-inline">
+								<input type="radio" name="gender" id="gender-male" value="1" checked="checked" >男
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="gender" id="gender-female" value="0">女
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="button" id="btn-change-info" class="btn btn-primary" value="保存修改" />
+						</div>
+					</div>
+				</form>
+          </div>
+          <!-- /.tab-pane -->
+          <div class="tab-pane" id="tab_2">
+          		<!-- 修改密碼欄 -->
+		       	<form class="form-horizontal" id="form-change-password">
+					<div class="form-group">
+						<label class="col-md-2 control-label">原密碼：</label>
+						<div class="col-md-8">
+							<input type="password" class="form-control" name="old_password" placeholder="請输入原密碼">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-2 control-label">新密碼：</label>
+						<div class="col-md-8">
+							<input type="password" class="form-control" name="new_password" placeholder="請输入新密碼">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="button" id="btn-change-password" class="btn btn-primary" value="保存修改" />
+						</div>
+					</div>
+				</form>
+          </div>
+          <!-- /.tab-pane -->
+          <div class="tab-pane" id="tab_3">
+          		<!-- 修改頭像 -->
+				<form class="form-horizontal" role="form" id="form-change-avatar">
+					<div class="form-group">
+						<label class="col-md-2 control-label">選擇頭像:</label>
+						<div class="col-md-2">
+							<img id="img-avatar" src="../dist/img/visitor.png" class="img-responsive" style="margin-bottom: 10px" />
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-md-offset-2 col-md-4">
+							<input type="file" name="file">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<input type="button" class="btn btn-primary" id="btn-change-avatar" value="上傳" />
+						</div>
+					</div>
+				</form>
+          </div>
+          <!-- /.tab-pane -->
+        </div>
+        <!-- /.tab-content -->
+      </div>
+      <!-- nav-tabs-custom -->
+	</div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <div class="footerpage"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- 額外JS -->
+<script src="../addJS/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- 引入html -->
+<script type="text/javascript">
+    $(".headerpage").load("header.html");
+    $(".footerpage").load("footer.html");
+    
+    $(document).ready(function(){
+    	
+    	$("#btn-change-password").click(function(){
+    		$.ajax({
+    			"url":"/forum/users/change_password",
+    			"data":$("#form-change-password").serialize(),
+    			"type":"post",
+    			"dateType":"json",
+    			"success":function(json){
+    				if(json.state==2000){
+    					alert("修改密碼成功！");
+    				}else{
+    					alert(json.message);
+    				}
+    			},
+    			"error":function(){
+    				alert("登入過時！請重新登入");
+    				window.location.href="login.html";
+    			}
+    		})
+    	})
+    	$("#btn-change-info").click(function(){
+    		$.ajax({
+    			"url":"/forum/users/change_info",
+    			"data":$("#form-change-info").serialize(),
+    			"type":"post",
+    			"dateType":"json",
+    			"success":function(json){
+    				if(json.state==2000){
+    					alert("修改個人資料成功！");
+    				}else{
+    					alert(json.message);
+    				}
+    			},
+    			"error":function(){
+    				alert("登入過時！請重新登入");
+    				window.location.href="login.html";
+    			}
+    		})
+    	})
+    	
+    	$("#btn-change-avatar").click(function(){
+    		$.ajax({
+    			"url":"/forum/users/change_avatar",
+    			"data":new FormData($("#form-change-avatar")[0]),
+    			"type":"post",
+    			"dateType":"json",
+    			"contentType":false,
+    			"processData":false,
+    			"success":function(json){
+    				if(json.state==2000){
+    					alert("修改個人資料成功！");
+    					
+    					location.reload();
+    					
+    				}else{
+    					alert(json.message);
+    				}
+    			},
+    			"error":function(){
+    				alert("登入過時！請重新登入");
+    				window.location.href="login.html";
+    			}
+    		})
+    	})
+    	
+    	
+    	showUserInfo();
+    })
+    
+    function showUserInfo(){
+    	$.ajax({
+    		"url":"/forum/users/get_info",
+    		"type":"get",
+    		"dataType":"json",
+    		"success":function(json){
+    			if(json.state==2000){
+    				$("#inp-username").val(json.data.username);
+    				$("#inp-email").val(json.data.email);
+    				$("#inp-phone").val(json.data.phone);
+    				
+    				$("#img-avatar").attr("src",json.data.avatar)
+    				
+    				var radio = json.data.gender == 0 ? $("#gender-female"):$("#gender-male");
+    				radio.attr("checked","checked");
+    				
+    				
+    			}else{
+    				alert(json.message);
+    			}
+    		}
+    	});
+    }
+    
+    
+</script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>

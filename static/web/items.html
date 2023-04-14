@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>裝備</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style type="text/css">
+  	.item-img{
+  		float:left;
+  	}
+  
+  	.item-img>img{
+  		width:100px;
+  	}
+  	
+  	.item-img>h5{
+		text-align:center;
+  	}
+  
+  	.item-property{
+  		float:left;
+  		margin-left:50px;
+  		width:130px;
+  		text-align:left;
+  	}
+  	.item-description{
+  		float:left;
+  		width:140px;
+  	}
+  </style>
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini skin-blue-light fixed">
+<div class="wrapper">
+
+  <!-- 引入header/sidebar中的內容 -->
+  <div class="headerpage"></div>
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- 暫省略
+    <section class="content-header">
+      <h1>
+        Page Header
+        <small>Optional description</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+    </section>
+     -->
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <!--------------------------
+        | Your Page Content Here |
+        -------------------------->
+	<h1 align="center">裝備一覽</h1>
+	
+	<div class="row">
+		<div class="col-md-6">
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Bloodthirster.jpg">
+					<h5>嗜血者</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格:3200<br>
+						暴擊率:25%<br>
+						物理攻擊:40
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						你過量的物理吸血轉化成護盾效果，護盾值為40-320點，護盾在脫戰後10秒內會逐漸衰減。
+					</span>
+				</div>
+			</div>
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Essence_Reaver.jpg">
+					<h5>奪魄之鐮</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格:3200<br>
+						攻擊力:40<br>
+						暴擊率:25%<br>
+						技能加速:25 
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						魂之怒湧：主動傷害性技能與強化普攻可造成10額外物理攻擊 + 70%暴擊率。同一技能每次施放只能對同一目標觸發一次。<br> 
+						魔力吸收：普攻命中時可回復2%已損失魔力。
+					</span>
+				</div>
+			</div>
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Solari_Chargeblade.jpg">
+					<h5>日輪蓄力刃</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格: 3000<br>
+						攻速:30%<br>
+						暴擊率:25%<br>
+						技能加速:25
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						太陽衝擊：施放技能後，獲得一層光輝（最多3層），擁有光輝時可增加25%暴擊率，最長持續10秒。普攻暴擊會消耗一層光輝，命中時造成26-40額外真實傷害。對生命值低的目標造成的真實傷害最多增加150%。每一種技能每2秒只能產生一層光輝。<br>
+						最高真實傷害：目標生命低於35%時為65-100
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Stormrazor.jpg">
+					<h5>狂暴利刃</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格: 2900<br>
+						物理攻擊:25<br>
+						攻速:20%<br>
+						暴擊率:25%
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						充能：移動與普攻會疊加能量，疊滿後普攻可觸發充能效果。<br>
+						麻痺：充能普攻可造成120額外魔法傷害，並緩速敵軍75%，持續0.5秒。
+					</span>
+				</div>
+			</div>
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Navori_Quickblades.jpg">
+					<h5>那歐疾刃</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格: 3100<br>
+						物理攻擊:45<br>
+						暴擊率:25%<br>
+						技能加速:15
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						輕巧打擊：普攻暴擊時，非大絕技能的剩餘冷卻時間減少15%。
+					</span>
+				</div>
+			</div>
+			<div class="box box-solid bg-black disable" style="overflow:hidden;padding:20px" >
+				<div class="item-img">
+					<img src="../dist/gameImg/items/Bloodthirster.jpg">
+					<h5>嗜血者</h5>
+				</div>
+				<div class="item-property">
+					<span>
+						總價格:3200<br>
+						暴擊率:25%<br>
+						物理攻擊:40
+					</span>
+				</div>
+				<div class="item-description">
+					<span>
+						你過量的物理吸血轉化成護盾效果，護盾值為40-320點，護盾在脫戰後10秒內會逐漸衰減。
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <div class="footerpage"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+
+
+<!-- 引入html -->
+<script type="text/javascript">
+    $(".headerpage").load("header.html");
+    $(".footerpage").load("footer.html");
+</script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. -->
+</body>
+</html>
